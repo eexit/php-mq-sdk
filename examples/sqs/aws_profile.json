@@ -1,0 +1,14 @@
+{
+    "includes": ["_aws"],
+    "services": {
+        "default_settings": {
+            "params": {
+                "region": "",
+                "credentials": {
+                    "key": "",
+                    "secret": ""
+                }
+            }
+        }
+    }
+}

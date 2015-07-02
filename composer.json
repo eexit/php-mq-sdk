@@ -1,0 +1,28 @@
+{
+    "name": "eexit/php-mq-sdk",
+    "description": "SDK that facilitates Amazon SQS or AMQP message queue production and consumption",
+    "type": "library",
+    "support": {
+        "email": "admin@eexit.net",
+        "source": "https://github.com/eexit/php-mq-sdk"
+    },
+    "require": {
+        "php": ">=5.4.30",
+        "aws/aws-sdk-php": "~2.8.0",
+        "psr/log": "^1.0",
+        "beberlei/metrics": "~2.0",
+        "php-amqplib/php-amqplib": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.7",
+        "monolog/monolog": "^1.23"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "files": ["src/Mq/MetricDirectory.php"],
+        "psr-4": {
+            "Eexit\\": "src/"
+        }
+    }
+}
